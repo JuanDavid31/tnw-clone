@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+}
+
+.logo {
+    width: 106px;
+    height: 48px;
+    background-color: black;
+}
+
+.logo img {
+    width: 66px;
+    height: 16px;
+    background-color: black;
+}
+
+.fa-search {
+    color: lightgray;
+}
+
+.fa-bars {
+    color: #f42;
+}
+
+nav .icon-container {
+    border-left: 1px solid #eee;
+    height: 48px;
+    width: 48px;
+    display: blox;
+}

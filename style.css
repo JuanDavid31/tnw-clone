@@ -1,17 +1,17 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .display-box {
@@ -19,7 +19,7 @@ body {
 }
 
 .text-decoration-none {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .color-white {
@@ -27,39 +27,40 @@ body {
 }
 
 nav {
-    justify-content: space-between;
-    box-shadow: 0 0 32px rgba(0,0,0,.15);
+  justify-content: space-between;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
 
 .logo {
-    width: 106px;
-    height: 48px;
-    background-color: black;
+  width: 106px;
+  height: 48px;
+  background-color: black;
 }
 
 .logo img {
-    width: 66px;
-    height: 16px;
-    background-color: black;
+  width: 66px;
+  height: 16px;
+  background-color: black;
 }
 
 .fa-search {
-    color: lightgray;
+  color: lightgray;
 }
 
 .fa-bars {
-    color: #f42;
+  color: #f42;
 }
 
 nav .icon-container {
-    border-left: 1px solid #eee;
-    height: 48px;
-    width: 48px;
+  border-left: 1px solid #eee;
+  height: 48px;
+  width: 48px;
 }
 
 .stories-cover {
 	min-height: 30vh;
-	padding: 4px;
+  padding: 4px;
+  position: relative;
 }
 
 .top-stories {
@@ -71,20 +72,47 @@ nav .icon-container {
   left: 4px;
   padding: 14px 12px;
   position: absolute;
+  width: 100%;
+  z-index: 3;
 }
 
-.article-links {
+.article-links-AIimaging {
   background-image: url(img/Untitled-design-2021-01-18T124627.webp);
   background-size: cover;
   background-position: 50%;
-  width: 384px;
-  height: 182px;
+  width: 100%;
+  height: 100%;
   position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.article-links-CESgadgets {
+  background-image: url(img/CES-home-796x418.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.article-links-rrhybrid {
+  background-image: url(img/ev-phantom-rols-royce-silent-shadow-car-future-electric-vehicle-796x449.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .article-clickable {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 .stories-title {
@@ -111,3 +139,8 @@ nav .icon-container {
 .article-details a {
 	color: hsla(0,0%,100%,.6);
 }
+
+.newslist {
+  display: flex
+}
+

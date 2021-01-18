@@ -1,3 +1,45 @@
+@font-face {
+  font-family: ars-maquette;
+  src: url(fonts/ars-maquette-regular.ttf);
+}
+
+@font-face {
+  font-family: avalon;
+  src: url(fonts/avalon.ttf);
+}
+
+@font-face {
+	font-family: shentox;
+	src: url(fonts/Shentox.ttf);
+}
+
+.ars-maquette {
+	font-family: ars-maquette;
+}
+
+.ars-maquette-bold {
+	font-family: ars-maquette;
+	font-weight: 700;
+}
+
+.avalon {
+	font-family: avalon;
+}
+
+.avalon-bold {
+	font-family: avalon;
+	font-weight: 700;
+}
+
+.shentox {
+	font-family: shentox;
+}
+
+.shentox-bold {
+	font-family: shentox;
+	font-weight: 700;
+}
+
 body {
   margin: 0;
 }
@@ -24,6 +66,10 @@ body {
 
 .color-white {
 	color: white;
+}
+
+.list-style-type-none {
+	list-style-type: none;
 }
 
 nav {
@@ -140,7 +186,43 @@ nav .icon-container {
 	color: hsla(0,0%,100%,.6);
 }
 
-.newslist {
-  display: flex
+main {
+	padding: 0 20px;
 }
 
+.latest {
+	padding-top: 24px;
+}
+
+.latest h2 {
+	margin-bottom: 24px;
+}
+
+.newslist {
+	padding: 0;
+	margin: 0
+}
+
+.newsitem {
+	height: 72px;
+	padding: 8px;
+}
+
+.newsitem h4 {
+	margin: 0 0 5px 0;
+	font-size: 14px;
+}
+
+.newsitem ul {
+	padding: 0;
+	font-size: 12px;
+}
+
+.newsitem img {
+	height: 75px;
+	width: 75px;
+}
+
+.newsitem div {
+	margin-left: 10px;
+}

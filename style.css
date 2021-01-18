@@ -18,6 +18,14 @@ body {
   display: block;
 }
 
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.color-white {
+	color: white;
+}
+
 nav {
     justify-content: space-between;
     box-shadow: 0 0 32px rgba(0,0,0,.15);
@@ -47,11 +55,15 @@ nav .icon-container {
     border-left: 1px solid #eee;
     height: 48px;
     width: 48px;
-    display: blox;
 }
 
 .stories-cover {
-  min-height: 30vh;
+	min-height: 30vh;
+	padding: 4px;
+}
+
+.top-stories {
+	padding: 4px;
 }
 
 .header-stories {
@@ -67,10 +79,35 @@ nav .icon-container {
   background-position: 50%;
   width: 384px;
   height: 182px;
+  position: absolute;
+}
+
+.article-clickable {
+    height: 100%;
+    width: 100%;
 }
 
 .stories-title {
-  color: #fff;
   font-weight: 700;
   line-height: 1.1;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.article-details {
+	font-size: 12px;
+	color: hsla(0,0%,100%,.6);
+}
+
+.article-details span {
+	margin-left: 6px;
+}
+
+.article-details i {
+	margin-right: 4px;
+}
+
+.article-details a {
+	color: hsla(0,0%,100%,.6);
 }

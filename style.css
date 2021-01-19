@@ -72,6 +72,10 @@ body {
   color: #f42;
 }
 
+.color-black {
+  color: black;
+}
+
 .list-style-type-none {
 	list-style-type: none;
 }
@@ -226,6 +230,11 @@ main {
 	margin-left: 10px;
 }
 
+.funding-round {
+  background-color: #fffaf8;
+  margin-bottom: 8px;
+}
+
 .investments-header {
   margin-bottom: 24px;
 }
@@ -234,11 +243,65 @@ main {
   color: #f42;
 }
 
+.investments-header h2 {
+  margin-bottom: -1px;
+}
+
 .investment-links {
   margin-top: 11px;
+  margin-bottom: 0;
 }
 
 .investments-content img {
   height: 60px;
   width: 60px;
+  position: absolute;
+  margin: 10.7px;
+}
+
+.investment-header {
+  height: 104px;
+  width: 100%;
+}
+
+.investment-header1 {
+  background: #f42;
+  padding: 10.7px 16px 10.7px 84px;
+  margin: 0;
+}
+
+.investment-header2 {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255,68,34,.08);
+}
+
+.investment-header2 h4 {
+  margin: 0;
+}
+
+.investment-header2 h5 {
+  margin: 0;
+  font-weight: 400;
+  opacity: .5;
+}
+
+.investment-card {
+  padding: 16px;
+  flex-direction: column;
+}
+
+.investment-card a {
+  margin-bottom: .5em;
+  font-weight: 400;
+}
+
+.investment-card i {
+  margin-right: 8px;
+}
+
+
+.investment-story { 
+  padding: 10px 16px 16px 16px;
+  border-top: 1px solid rgba(255,68,34,.25);
 }

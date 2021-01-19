@@ -60,6 +60,10 @@ body {
   align-items: center;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .display-box {
   display: block;
 }
@@ -78,6 +82,10 @@ body {
 
 .color-black {
   color: black;
+}
+
+.color-gray {
+  color: #aaa;
 }
 
 .list-style-type-none {
@@ -491,4 +499,38 @@ main {
 
 .deal-8 {
   background-image: url(img/deal8.jpg);
+}
+
+.social-media {
+  background: #131313;
+  padding: 2.5em 0;
+}
+
+.socialmedia-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.socialmedia-icons {
+  margin-bottom: 1.5em;
+}
+
+.socialmedia-icons li {
+  display: inline-block;
+}
+
+.socialmedia-icons a {
+  background: #333;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.socialmedia-icons i {
+  color: #fffaf8;
+}
+
+.socialmedia-links li {
+  font-size: 13px;
+  display: inline-block;
 }

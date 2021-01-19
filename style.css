@@ -48,6 +48,10 @@ body {
   display: flex;
 }
 
+.flex-direction-row {
+  flex-direction: row;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -149,6 +153,10 @@ nav .icon-container {
   background-image: url(img/ev-phantom-rols-royce-silent-shadow-car-future-electric-vehicle-796x449.jpg);
 }
 
+.article-links-Trump {
+  background-image: url(img/trump.jpg);
+}
+
 .article-clickable {
   height: 100%;
   width: 100%;
@@ -233,6 +241,7 @@ main {
 .funding-round {
   background-color: #fffaf8;
   margin-bottom: 8px;
+  padding: 6px;
 }
 
 .investments-header {
@@ -304,4 +313,22 @@ main {
 .investment-story { 
   padding: 10px 16px 16px 16px;
   border-top: 1px solid rgba(255,68,34,.25);
+}
+
+.article-wrap {
+  background-color:#fffaf8;
+  margin: 2px;
+}
+
+.article-header {
+  padding: 10px 14px 0;
+}
+
+.article-winklevoss {
+  background-image: url(img/winklevossbitcoin.jpg);
+  background-position: 50%;
+  background-size: cover;
+  height: 96px;
+  width: 96px;
+  flex: 0 0 96px;
 }

@@ -309,7 +309,6 @@ main {
   margin-right: 8px;
 }
 
-
 .investment-story { 
   padding: 10px 16px 16px 16px;
   border-top: 1px solid rgba(255,68,34,.25);
@@ -317,11 +316,31 @@ main {
 
 .article-wrap {
   background-color:#fffaf8;
-  margin: 2px;
+  margin: 2px 0;
+  height: 96px;
 }
 
 .article-header {
   padding: 10px 14px 0;
+}
+
+.article-header h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.article-header h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.late-news-header h4 {
+  font-size: 28px;
+  margin: 0 0 14px 0;
+}
+
+.latest-news .stories-cover {
+  margin: 4px 0;
 }
 
 .article-winklevoss {
@@ -331,4 +350,27 @@ main {
   height: 96px;
   width: 96px;
   flex: 0 0 96px;
+}
+
+.late-news-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.late-news-list li {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+.late-news-list li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.late-news-list a {
+  font-size: 14px;
 }

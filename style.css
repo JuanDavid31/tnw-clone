@@ -157,6 +157,26 @@ nav .icon-container {
   background-image: url(img/trump.jpg);
 }
 
+.article-links-Trump1 {
+  background-image: url(img/trump1.webp);
+}
+
+.article-links-eyestrain {
+  background-image: url(img/eyestrain.jpg);
+}
+
+.article-links-ukbus {
+  background-image: url(img/ukbus.jpg);
+}
+
+.article-links-knd {
+  background-image: url(img/knd.webp);
+}
+
+.article-links-opensource {
+  background-image: url(img/opensource.webp);
+}
+
 .article-clickable {
   height: 100%;
   width: 100%;
@@ -343,13 +363,36 @@ main {
   margin: 4px 0;
 }
 
-.article-winklevoss {
-  background-image: url(img/winklevossbitcoin.jpg);
+.article-img {
   background-position: 50%;
   background-size: cover;
   height: 96px;
   width: 96px;
   flex: 0 0 96px;
+}
+
+.article-winklevoss {
+  background-image: url(img/winklevossbitcoin.jpg);
+}
+
+.article-android {
+  background-image: url(img/android.webp);
+}
+
+.article-sleepapp {
+  background-image: url(img/sleepapp.webp);
+}
+
+.article-bangkok {
+  background-image: url(img/bangkok.webp);
+}
+
+.article-gdesign {
+  background-image: url(img/gdesign.jpg);
+}
+
+.article-gugol {
+  background-image: url(img/gugol.webp);
 }
 
 .late-news-list {

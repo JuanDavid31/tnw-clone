@@ -4,7 +4,7 @@
 
 > This is a clone of [The next web](https://thenextweb.com/) website. 
 
-![screenshot](img/screenshot.png)
+![screenshot](img/screenshot.PNG)
 
 This is a clone from The next web website, it focus on resposive web design.
 

@@ -99,7 +99,7 @@ body {
 nav {
   box-shadow: 0 0 32px rgba(0,0,0,.15);
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   background-color: white;
   width: 100%;
 }
@@ -910,4 +910,84 @@ footer {
     font-size: 28px;
   }
   
+  main {
+    padding-top: 24px;
+    margin: 0 auto;
+    max-width: 1194px;
+  }
+
+  .newslist {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "first second third fourth"
+      "fifth sixth seventh eighth";
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .investments-header {
+    align-items: baseline;
+  }
+
+  .investments-header h2 {
+    width:initial;
+    flex-grow: 1;
+  }
+
+  .investments-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "first second third fourth";
+    column-gap: 10px;
+  }
+
+  .latest-news {
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth"
+      "seventh eigth ninth";
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .latest-news:nth-child(1) {
+    grid-area: first;
+  }
+
+  .latest-news:nth-child(2) {
+    grid-area: second;
+  }
+
+  .latest-news:nth-child(3) {
+    grid-area: third;
+  }
+
+  .latest-news:nth-child(4) {
+    grid-area: fourth;
+  }
+
+  .latest-news:nth-child(5) {
+    grid-area: fifth;
+  }
+
+  .latest-news:nth-child(6) {
+    grid-area: sixth;
+  }
+
+  .latest-news:nth-child(7) {
+    grid-area: seventh;
+  }
+
+  .latest-news:nth-child(8) {
+    grid-area: eigth;
+  }
+
+  .latest-news:nth-child(9) {
+    grid-area: ninth;
+  }
+
 }

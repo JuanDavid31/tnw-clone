@@ -606,7 +606,20 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 3;
+}
+
+.latest-discount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+  margin: 0;
 }
 
 @media screen and  (max-width: 320px) {
@@ -697,9 +710,10 @@ footer {
     flex-direction: column;
     height: initial;
     padding: 0;
+    position: relative;
   }
 
-  .newsitem div {
+  .newsitem-text {
     margin: 8px 0 0 0;
   }
 
@@ -822,4 +836,78 @@ footer {
     grid-area: ninth;
   }
 
+  .disclaimer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-display-none {
+    display: none;
+  }
+
+  .desktop-display {
+    display: block;
+  }
+
+  .upper-nav-left-section {
+    margin-left: 0;
+  }
+
+  .top-stories {
+    height: 75vh;
+    max-height: 560px;
+  }
+
+  .pink-gradient {
+    background: transparent url(img/pink-gradient.png) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+
+  .big-logo {
+    color: #fff;
+    position: absolute;
+    right: 24px;
+    z-index: 5;
+    background: transparent url(img/tnw.svg) no-repeat;
+    background-size: contain;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    line-height: 1;
+    top: 24px;
+    pointer-events: none;
+    text-align: right;
+  }
+
+  .tablet-stories-title a {
+    font-size: 56px;
+  }
+
+  .story-date {
+    display: block;
+    top: 16px;
+    color: #fff;
+    position: absolute;
+    right: 24px;
+    z-index: 5;
+    font-weight: 400;
+  }
+
+  .secondary-stories {
+    font-size: 28px;
+  }
+  
 }

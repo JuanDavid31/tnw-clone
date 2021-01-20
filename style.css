@@ -623,6 +623,10 @@ footer {
     display: flex;
   }
 
+  .tablet-display-grid {
+    display: grid;
+  }
+
   nav {
     flex-direction: column;
   }
@@ -644,5 +648,114 @@ footer {
 
   .top-stories {
     padding-top: 84px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "first first second"
+      "first first third";
   }
+  
+  .top-stories .stories-cover:nth-child(1) {
+    grid-area: first;
+  }
+
+  .top-stories .stories-cover:nth-child(2) {
+    grid-area: second;
+  }
+
+  .top-stories .stories-cover:nth-child(3) {
+    grid-area: third;
+  }
+
+  .newslist {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth"
+      "seventh eighth ninth";
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .newsitem {
+    flex-direction: column;
+    height: initial;
+    padding: 0;
+  }
+
+  .newsitem div {
+    margin: 8px 0 0 0;
+  }
+
+  .newsitem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newslist > .newsitem:nth-child(1) {
+    grid-area: first;
+  }
+
+  .newslist > .newsitem:nth-child(2) {
+    grid-area: second;
+  }
+
+  .newslist > .newsitem:nth-child(3) {
+    grid-area: third;
+  }
+
+  .newslist > .newsitem:nth-child(4) {
+    grid-area: fourth;
+  }
+
+  .newslist > .newsitem:nth-child(5) {
+    grid-area: fifth;
+  }
+
+  .newslist > .newsitem:nth-child(6) {
+    grid-area: sixth;
+  }
+
+  .newslist > .newsitem:nth-child(7) {
+    grid-area: seventh;
+  }
+
+  .newslist > .newsitem:nth-child(8) {
+    grid-area: eighth;
+  }
+
+  .investments-header {
+    flex-wrap: wrap;
+  }
+
+  .investments-header h2 {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+
+  .investments-header a {
+    margin-top: 0;;
+  }
+
+  .investments-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "first second third";
+    column-gap: 10px;
+  }
+
+  .funding-round:nth-child(1) {
+    grid-area: first;
+  }
+
+  .funding-round:nth-child(2) {
+    grid-area: second;
+  }
+
+  .funding-round:nth-child(3) {
+    grid-area: third;
+  }
+
 }

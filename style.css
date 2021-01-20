@@ -481,6 +481,10 @@ main {
   font-size: 14px;
 }
 
+.late-news-list a:hover {
+  color: #aaa;
+}
+
 .latest-deals-header {
   justify-content: space-between;
 }

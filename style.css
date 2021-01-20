@@ -52,6 +52,10 @@ body {
   flex-direction: row;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -93,7 +97,6 @@ body {
 }
 
 nav {
-  justify-content: space-between;
   box-shadow: 0 0 32px rgba(0,0,0,.15);
   position: fixed;
   z-index: 4;
@@ -501,6 +504,10 @@ main {
   background-image: url(img/deal8.jpg);
 }
 
+footer {
+  margin-top: 30px
+}
+
 .social-media {
   background: #131313;
   padding: 2.5em 0;
@@ -514,10 +521,12 @@ main {
 
 .socialmedia-icons {
   margin-bottom: 1.5em;
+  padding-left: 0;
 }
 
 .socialmedia-icons li {
   display: inline-block;
+  margin: 0 3px;
 }
 
 .socialmedia-icons a {
@@ -530,7 +539,110 @@ main {
   color: #fffaf8;
 }
 
+.socialmedia-links {
+  padding-left: 0;;
+}
+
 .socialmedia-links li {
   font-size: 13px;
   display: inline-block;
+  margin: 0 4px;
+}
+
+.disclaimer {
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
+}
+
+.disclaimer svg {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+}
+
+.upper-nav {
+  height: 32px;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.upper-nav-left-section {
+  margin-left: 108px;
+}
+
+.upper-nav-left-section a:first-of-type {
+  color: white;
+}
+
+.upper-nav a {
+  color: hsla(0,0%,100%,.6);
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.upper-nav a:hover {
+  color: white;
+}
+
+.upper-nav-right-section {
+  margin-right: 20px;
+}
+
+.lower-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and  (max-width: 320px) {
+  .socialmedia-icons li:nth-child(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-display-none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-display-none {
+    display: none;
+  }
+
+  .tablet-display {
+    display: block;
+  }
+
+  .tablet-display-flex {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    align-items: initial; 
+  }
+
+  .nav-sections {
+    display: flex;
+    padding-left: 0;
+    width: calc(100% - 156px);
+  }
+
+  .nav-sections a {
+    padding: 18px 10px 0;
+    color: #aaa;
+  }
+
+  .top-stories {
+    padding-top: 84px;
+  }
 }

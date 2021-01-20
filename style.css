@@ -9,35 +9,35 @@
 }
 
 @font-face {
-	font-family: shentox;
-	src: url(fonts/Shentox.ttf);
+  font-family: shentox;
+  src: url(fonts/Shentox.ttf);
 }
 
 .ars-maquette {
-	font-family: ars-maquette;
+  font-family: ars-maquette, sans-serif;
 }
 
 .ars-maquette-bold {
-	font-family: ars-maquette;
-	font-weight: 700;
+  font-family: ars-maquette, sans-serif;
+  font-weight: 700;
 }
 
 .avalon {
-	font-family: avalon;
+  font-family: avalon, sans-serif;
 }
 
 .avalon-bold {
-	font-family: avalon;
-	font-weight: 700;
+  font-family: avalon, sans-serif;
+  font-weight: 700;
 }
 
 .shentox {
-	font-family: shentox;
+  font-family: shentox, sans-serif;
 }
 
 .shentox-bold {
-	font-family: shentox;
-	font-weight: 700;
+  font-family: shentox, sans-serif;
+  font-weight: 700;
 }
 
 body {
@@ -77,7 +77,7 @@ body {
 }
 
 .color-white {
-	color: white;
+  color: white;
 }
 
 .color-orange {
@@ -93,11 +93,11 @@ body {
 }
 
 .list-style-type-none {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 nav {
-  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 6;
   background-color: white;
@@ -127,7 +127,7 @@ nav .icon-container {
 }
 
 .stories-cover {
-	min-height: 30vh;
+  min-height: 30vh;
   margin: 4px;
   position: relative;
 }
@@ -141,12 +141,11 @@ nav .icon-container {
   bottom: 4px;
   left: 4px;
   padding: 14px 12px;
-	position: absolute;
-	box-sizing: border-box;
+  position: absolute;
+  box-sizing: border-box;
   width: 100%;
   z-index: 3;
 }
-
 
 .header-stories:hover {
   cursor: pointer;
@@ -157,7 +156,7 @@ nav .icon-container {
 }
 
 .article-links-img {
-	background-size: cover;
+  background-size: cover;
   background-position: 50%;
   width: 100%;
   height: 100%;
@@ -206,95 +205,110 @@ nav .icon-container {
   height: 100%;
   width: 100%;
   position: absolute;
-	z-index: 2;
-	background: rgba(0,0,0,.25) url(img/image-gradient.png) no-repeat;
-	background-size: 100% 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.25) url(img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .stories-title {
   font-weight: 700;
   line-height: 1.1;
-	font-size: 20px;
-	margin-top: 0;
-	margin-bottom: 5px;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .article-details {
-	font-size: 12px;
-  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.6);
   font-weight: 400;
 }
 
 .article-details span {
-	margin-left: 6px;
+  margin-left: 6px;
 }
 
 .article-details i {
-	margin-right: 4px;
+  margin-right: 4px;
 }
 
 .article-details a {
-	color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 main {
-	padding: 0 20px;
+  padding: 0 20px;
 }
 
 .latest {
-	padding-top: 24px;
+  padding-top: 24px;
 }
 
 .latest-title:hover {
   color: black;
 }
 
-.latest-title:hover+.orange-right-arrow{
-  
-  background: url(img/black-right-arrow.svg) no-repeat;
-}
-
 .orange-right-arrow {
   height: 15px;
 }
 
+.latest-title:hover + .orange-right-arrow {
+  background: url(img/black-right-arrow.svg) no-repeat;
+}
+
 .newslist {
-	padding: 0;
-	margin: 0
+  padding: 0;
+  margin: 0;
 }
 
 .newsitem {
-	height: 72px;
-	padding: 8px 0;
+  height: 72px;
+  padding: 8px 0;
 }
 
 .newsitem h4 {
-	margin: 0 0 5px 0;
-	font-size: 14px;
+  margin: 0 0 5px 0;
+  font-size: 14px;
 }
 
 .newsitem ul {
-	padding: 0;
+  padding: 0;
   font-size: 12px;
   color: #aaa;
 }
 
-.newsitem li+li {
+.late-news-list li {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+.socialmedia-icons li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.socialmedia-links li {
+  font-size: 13px;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.newsitem li + li {
   margin-left: 10px;
 }
 
 .newsitem img {
-	height: 75px;
-	width: 75px;
+  height: 75px;
+  width: 75px;
 }
 
 .newsitem-title:hover {
   color: #f42;
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.25);
 }
 
 .newsitem div {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .funding-round {
@@ -341,7 +355,7 @@ main {
 .investment-header2 {
   padding: 10.6666666667px 16px 10.6666666667px 84px;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
 }
 
 .investment-header2 h4 {
@@ -351,7 +365,7 @@ main {
 .investment-header2 h5 {
   margin: 0;
   font-weight: 400;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .investment-card {
@@ -360,7 +374,7 @@ main {
 }
 
 .investment-card a {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-weight: 400;
 }
 
@@ -368,13 +382,13 @@ main {
   margin-right: 8px;
 }
 
-.investment-story { 
+.investment-story {
   padding: 10px 16px 16px 16px;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .article-wrap {
-  background-color:#fffaf8;
+  background-color: #fffaf8;
   margin: 2px 0;
   height: 96px;
 }
@@ -447,7 +461,7 @@ main {
 }
 
 .article-hummer {
-  background-image: url(img/hummer-ev-future-car-love-hate-next-gmc-gm-ultium.jpg)
+  background-image: url(img/hummer-ev-future-car-love-hate-next-gmc-gm-ultium.jpg);
 }
 
 .article-stellaris {
@@ -463,22 +477,29 @@ main {
   padding-left: 20px;
 }
 
-.late-news-list li {
-  border-bottom: 1px solid #eee;
-  padding: 6px 0;
-}
-
 .late-news-list li::before {
   content: "\2022";
   color: #f42;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
 .late-news-list a {
   font-size: 14px;
+}
+
+.socialmedia-icons a {
+  background: #333;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.upper-nav a {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-left: 10px;
+  font-size: 13px;
 }
 
 .late-news-list a:hover {
@@ -532,7 +553,7 @@ main {
 }
 
 footer {
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .social-media {
@@ -551,29 +572,12 @@ footer {
   padding-left: 0;
 }
 
-.socialmedia-icons li {
-  display: inline-block;
-  margin: 0 3px;
-}
-
-.socialmedia-icons a {
-  background: #333;
-  border-radius: 50%;
-  padding: 12px;
-}
-
 .socialmedia-icons i {
   color: #fffaf8;
 }
 
 .socialmedia-links {
-  padding-left: 0;;
-}
-
-.socialmedia-links li {
-  font-size: 13px;
-  display: inline-block;
-  margin: 0 4px;
+  padding-left: 0;
 }
 
 .disclaimer {
@@ -604,12 +608,6 @@ footer {
 
 .upper-nav-left-section a:first-of-type {
   color: white;
-}
-
-.upper-nav a {
-  color: hsla(0,0%,100%,.6);
-  margin-left: 10px;
-  font-size: 13px;
 }
 
 .upper-nav a:hover {
@@ -683,7 +681,7 @@ footer {
   }
 
   .logo {
-    align-items: initial; 
+    align-items: initial;
   }
 
   .nav-sections {
@@ -701,7 +699,7 @@ footer {
     padding-top: 84px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "first first second"
       "first first third";
   }
@@ -709,7 +707,7 @@ footer {
   .tablet-stories-title a {
     font-size: 40px;
   }
-  
+
   .top-stories .stories-cover:nth-child(1) {
     grid-area: first;
   }
@@ -791,14 +789,13 @@ footer {
   }
 
   .investments-header a {
-    margin-top: 0;;
+    margin-top: 0;
   }
 
   .investments-content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas:
-      "first second third";
+    grid-template-areas: "first second third";
     column-gap: 10px;
   }
 
@@ -867,7 +864,6 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -936,7 +932,7 @@ footer {
   .secondary-stories {
     font-size: 28px;
   }
-  
+
   main {
     padding-top: 24px;
     margin: 0 auto;
@@ -958,15 +954,14 @@ footer {
   }
 
   .investments-header h2 {
-    width:initial;
+    width: initial;
     flex-grow: 1;
   }
 
   .investments-content {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas:
-      "first second third fourth";
+    grid-template-areas: "first second third fourth";
     column-gap: 10px;
   }
 
@@ -1016,13 +1011,10 @@ footer {
   .latest-news:nth-child(9) {
     grid-area: ninth;
   }
-
 }
 
 @media screen and (min-width: 1213px) {
-
   .extra-large-display-list-item {
     display: list-item;
   }
-
 }

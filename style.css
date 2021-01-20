@@ -598,6 +598,17 @@ footer {
   justify-content: space-between;
 }
 
+.latest-discount {
+  background-image: url(img/discount.svg);
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
 @media screen and  (max-width: 320px) {
   .socialmedia-icons li:nth-child(6) {
     display: none;
@@ -653,6 +664,10 @@ footer {
     grid-template-areas: 
       "first first second"
       "first first third";
+  }
+
+  .tablet-stories-title a {
+    font-size: 40px;
   }
   
   .top-stories .stories-cover:nth-child(1) {
@@ -756,6 +771,55 @@ footer {
 
   .funding-round:nth-child(3) {
     grid-area: third;
+  }
+
+  .latest-news {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(5, 2fr);
+    grid-template-areas:
+      "first second"
+      "third fourth"
+      "fifth sixth"
+      "seventh eigth"
+      "ninth tenth";
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .latest-news:nth-child(1) {
+    grid-area: first;
+  }
+
+  .latest-news:nth-child(2) {
+    grid-area: second;
+  }
+
+  .latest-news:nth-child(3) {
+    grid-area: third;
+  }
+
+  .latest-news:nth-child(4) {
+    grid-area: fourth;
+  }
+
+  .latest-news:nth-child(5) {
+    grid-area: fifth;
+  }
+
+  .latest-news:nth-child(6) {
+    grid-area: sixth;
+  }
+
+  .latest-news:nth-child(7) {
+    grid-area: seventh;
+  }
+
+  .latest-news:nth-child(8) {
+    grid-area: eigth;
+  }
+
+  .latest-news:nth-child(9) {
+    grid-area: ninth;
   }
 
 }

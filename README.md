@@ -4,7 +4,7 @@
 
 > This is a clone of [The next web](https://thenextweb.com/) website. 
 
-![screenshot](img/readme.png)
+![screenshot](img/screenshot.PNG)
 
 This is a clone from The next web website, it focus on resposive web design.
 
@@ -50,7 +50,7 @@ in the project settings there is a section called github pages that will let you
 
 👤 **Author2**
 
-- GitHub: [EroAuditore](https://github.com/EroAuditore)
+- GitHub: [LoxiasCam](https://github.com/LoxiasCam)
 
 ## 🤝 Contributing
 
